@@ -1,0 +1,12 @@
+/* Base CSS */
+html{
+    font-size: 10px;
+}
+
+/* Default CSS */
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F8F9F9;
+    font-family: "Titillium Web", sans-serif;
+}
