@@ -9,4 +9,22 @@ body{
     padding: 0;
     background-color: #F8F9F9;
     font-family: "Titillium Web", sans-serif;
+    font-size: 1.2rem;
+    color: #2C3E50;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+h4{
+    font-size: 1.5rem;
+}
+
+code{
+    background-color: #F9E79F;
 }

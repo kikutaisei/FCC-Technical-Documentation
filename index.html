@@ -9,6 +9,92 @@
     <title>CSS Technical Documentation</title>
 </head>
 <body>
-    
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <main id="main-doc">
+        <section id="Introduction" class="main-section">
+            <header><h2>Introduction</h2></header>
+            <article>
+                <h3>What is CSS?</h3>
+                <p>CSS (Cascading Style Sheets) is code that's used to describe how HTML elements are displayed.</p>
+                <p>CSS isn't quite a programming language. It's more of a styling language used for web design, layout and variations in display according to the screen size.</p>
+                <h3>How is CSS written?</h3>
+                <p>The syntax for CSS is very simple and follows a basic pattern:</p>
+                <ol>
+                    <li>Selector</li>
+                    <li>Declaration
+                        <ol>
+                            <li>Property</li>
+                            <li>Value</li>
+                        </ol>
+                    </li>
+                </ol>
+                <p>The selector defines what HTML element should be styled, while the declaration block specifies what exactly about the HTML element should be styled, such as color or alignment:</p>
+                <code>
+                    p {color: red; text-align: center}
+                </code>
+            </article>
+        </section>
+
+        <section id="Colors" class="main-section">
+            <header><h2>Colors</h2></header>
+            <article>
+                <h3>How can elements be colored?</h3>
+                <p>There are several different methods of coloring elements, but the main three are the following:</p>
+                <ul>
+                    <li>Color name</li>
+                    <li>Hex value</li>
+                    <li>RGB value</li>
+                </ul>
+                <p>There is a <a href="https://www.w3schools.com/cssref/css_colors.asp" target="_blank">massive list of colors</a> to choose from!</p>
+                <p>If you try copying the example code below, you will find that all 3 methods can be used to represent the same color!</p>
+                <h4>Color name</h4>
+                <p>Assigning color names to elements are the easist way to add color to them. However this method is limited due to the lack of customisation available.</p>
+                <p>Color names can only cover a small fraction of the massive variety that can be achieved by hex values and RGB values.</p>
+                <code>
+                    p {color: OrangeRed;}
+                </code>
+                <h4>Hex value</h4>
+                <p>Hex values are 6 digit codes in hexadecimal format (from 0 to F) that specify to the computer what exact color to apply onto an element. This method is more advanced as it allows more precise color declarations. Hex values can allow up to 256 different colors.</p>
+                <p>The first 2 digits represent the red color, the second 2 digits represent the green color and the last 2 digits represent the blue color.</p>
+                <code>
+                    p {color: #FF4500;}
+                </code>
+                <h4>RGB value</h4>
+                <p>RGB values allow 3 parameters in decimal format (from 0 to 255). This method is very similar to declaring hex values, but provides even more precision due to the range of values that can be given. RGB values can allow more than 16 million colors!</p>
+                <p>The first parameter represents the red color, the second parameter represents the green color and the last parameter represents the blue color.</p>
+                <code>
+                    p {color: rgb(255, 69, 0);}
+                </code>
+            </article>
+        </section>
+
+        <section id="Box_Model" class="main-section">
+            <header><h2>Box Model</h2></header>
+            <article>
+                <h3>How are elements placed within boxes?</h3>
+                <p>There are multiple boxes that surround an element with content. These different boxes can be manipulated to accomodate more space between elements or narrow down that space.</p>
+                <p>The main boxes in the order of their position relative to the elements are:</p>
+                <ol>
+                    <li>Padding: Space between the element's contents and its border.</li>
+                    <li>Border: Line between the padding and margin of an element.</li>
+                    <li>Margin: Space between the element's border and surrounding elements.</li>
+                </ol>
+                <p>All three boxes can be declared and manipulated for an element:</p>
+                <code>
+                    p {padding: 10px; border: 2px solid black; margin: 10px;}
+                </code>
+            </article>
+        </section>
+
+        <section id="Flexbox" class="main-section">
+            <header><h2>Flexbox</h2></header>
+        </section>
+
+        <section id="Grid" class="main-section">
+            <header><h2>Grid</h2></header>
+        </section>
+    </main>
+
 </body>
 </html>
