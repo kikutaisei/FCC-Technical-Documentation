@@ -89,10 +89,45 @@
 
         <section id="Flexbox" class="main-section">
             <header><h2>Flexbox</h2></header>
+            <article>
+                <h3>What is CSS Flexbox?</h3>
+                <p>CSS Flexbox is one method of web layout to allow for responsive web design.</p>
+                <p>Before CSS Flexbox, elements could not be placed on the webpage freely and therefore did not look visually appealing with different screen sizes. All elements would simply just be stacked on top of each other in order of their declaration.</p>
+                <p>However with the arrival of the CSS Flexbox module, these elements can now be placed next to each other within a flex container which responds to different screen sizes, allowing for a better user experience.</p>
+                <h3>How do we use CSS Flexbox?</h3>
+                <p>First, it is important to understand how CSS Flexbox works. It only works for Flex Items within a Flex Container. In other words, elements (Flex Items) must be nested within a container element (Flex Container) in order for it to work.</p>
+                <p>To create a flex container, we can declare a container element to posses the property of "flex":</p>
+                <code>
+                    div {display: flex;}
+                </code>
+                <p>Then, the flex container can be set to either layout its items in a "row" or "column" orientation:</p>
+                <code>
+                    div {display: flex; flex-direction: row;}
+                </code>
+                <p>Next, the flex container can be set to either "wrap" which means to move the flex items onto the next line if there isn't enough space on the first line or to not wrap:</p>
+                <code>
+                    div {display: flex; flex-direction: row; flex-wrap: wrap;}
+                </code>
+            </article>
         </section>
 
         <section id="Grid" class="main-section">
             <header><h2>Grid</h2></header>
+            <article>
+                <h3>What is CSS Grid?</h3>
+                <p>Similar to CSS Flexbox, CSS Grid is another method of layout for a webpage for responsive web design.</p>
+                <p>While CSS Flexbox is geared towards layouts that require elements in a single axis or direction, CSS Grid as the name suggests is effective for elements that are placed in two axes or directions like a table with multiple rows and columns.</p>
+                <p>Also similar to CSS Flexbox, CSS Grid makes use of container elements that act as Grid Containers that hold or nest Grid Items within them.</p>
+                <h3>How do we use CSS Grid?</h3>
+                <p>We must first declare a grid container to hold the grid items:</p>
+                <code>
+                    div {display: grid;}
+                </code>
+                <p>Then, we must assign how many columns or rows we want the Grid Container to have (in the following example we are assigning 3 columns all of width 1 fraction):</p>
+                <code>
+                    div {display: grid; grid-template-columns: 1fr 1fr 1fr;}
+                </code>
+            </article>
         </section>
     </main>
 
