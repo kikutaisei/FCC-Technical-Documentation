@@ -13,6 +13,52 @@ body{
     color: #2C3E50;
 }
 
+/* Navbar container as a flex container */
+#navbar{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #F2F4F4;
+    border-bottom: 5px solid #808B96;
+}
+
+/* Navbar Title */
+h1{
+    margin: 0;
+    font-size: 3rem;
+}
+
+/* Navbar section unordered list */
+#navbar ul{
+    list-style: none;
+    padding: 0;
+}
+
+/* Navbar section list item when not hovering */
+#navbar ul li a:link{
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #2C3E50;
+}
+
+/* Navbar section list item when hovering */
+#navbar ul li a:hover{
+    background-color: #F5B041;
+}
+
+
+
+
+
+
+/* Main section */
+#main-doc{
+    width: 90%;
+    margin: 30px auto;
+}
+
 /* Titles */
 h2{
     font-size: 2.5rem;
@@ -36,4 +82,18 @@ code{
 /* Lists */
 ol, ul{
     padding-left: 40px;
+}
+
+/* Only for screens with sizes of at least 1000px */
+@media screen and (min-width: 1000px){
+    #navbar{
+        width: 250px;
+        height: 100%;
+        position: fixed;
+    }
+
+    #main-doc{
+        margin-left: 280px;
+        margin-right: 0;
+    }
 }
